@@ -12,12 +12,11 @@ with source_data as (
 
     select *
 	from {{ source('snowflake_db_siva_schema','emp') }}
-	where salary > 3000
 
 )
-
 select *
 from source_data
+where salary > 3000
 
 /*
     Uncomment the line below to remove records with null `id` values
