@@ -11,7 +11,7 @@
 with source_data as (
 
     select *
-	from {{ source('snowflake_db','emp') }}
+	from {{ source('snowflake_db_siva_schema','emp') }}
 	where salary > 3000
 
 )
