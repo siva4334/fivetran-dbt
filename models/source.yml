@@ -1,6 +1,6 @@
 version: 2
 
 sources:
-  - name: snowflake_db_siva_schema
+  - name: siva_db_siva_schema
     tables:
       - name: emp
